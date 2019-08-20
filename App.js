@@ -15,6 +15,7 @@ import {
   Text,
   Button,
   StatusBar,
+  TouchableOpacity
 } from 'react-native';
 
 import {
@@ -31,6 +32,8 @@ import {
   unregisterBundle,
   reloadBundle
 } from 'react-native-dynamic-bundle';
+import codePush from 'react-native-code-push';
+
 
 const App = () => {
   return (
@@ -40,10 +43,18 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Button title={"register bundle"} onPress={() => registerBundle("bir", "/storage/emulated/0/guncelle.bundle")} />
-          <Button title={"set active bundle"} onPress={() => setActiveBundle("bir")} />
-          <Button title={"unregister bundle"} onPress={() => unregisterBundle("bir")} />
-          <Button title={"reload bundle"} onPress={() => reloadBundle()} />
+          <Text>
+            Güncellendi
+          </Text>
+          <TouchableOpacity onPress={async () => {
+            await codePush.sync({
+              updateDialog: true,
+              installMode: codePush.InstallMode.IMMEDIATE
+            });
+          }}>
+            <Text>Check for updates</Text>
+          </TouchableOpacity>
+
         </ScrollView>
       </SafeAreaView>
     </Fragment>

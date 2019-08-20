@@ -833,6 +833,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+string CODE_PUSH_APK_BUILD_TIME
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -876,18 +877,6 @@ string alert_description
 string appCenterAnalytics_whenToEnableAnalytics
 string appCenterCrashes_whenToSendCrashes
 string app_name
-string auto_updater_checking
-string auto_updater_downloaded_later
-string auto_updater_downloaded_message
-string auto_updater_downloaded_now
-string auto_updater_downloaded_title
-string auto_updater_downloading
-string auto_updater_downloading_error
-string auto_updater_downloading_success
-string auto_updater_invalid_metadata
-string auto_updater_no_hostname
-string auto_updater_no_metadata
-string auto_updater_up_to_date
 string catalyst_copy_button
 string catalyst_debugjs
 string catalyst_debugjs_nuclide
@@ -922,6 +911,7 @@ string menubar_description
 string menuitem_description
 string progressbar_description
 string radiogroup_description
+string reactNativeCodePush_androidDeploymentKey
 string rn_tab_description
 string scrollbar_description
 string search_description

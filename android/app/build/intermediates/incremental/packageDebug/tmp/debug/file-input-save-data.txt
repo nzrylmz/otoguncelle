@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Aug 20 18:31:06 EET 2019
+#Tue Aug 20 20:07:26 EET 2019
 33.base=/Users/nzrylmz/Dev/otoguncelle/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
 47.base=/Users/nzrylmz/Dev/otoguncelle/android/app/build/intermediates/transforms/mergeJniLibs/debug/0
 50.base=/Users/nzrylmz/Dev/otoguncelle/android/app/build/intermediates/transforms/mergeJniLibs/debug/0

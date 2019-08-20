@@ -19,8 +19,8 @@ import com.microsoft.appcenter.reactnative.appcenter.AppCenterReactNativePackage
 import com.microsoft.appcenter.reactnative.analytics.AppCenterReactNativeAnalyticsPackage;
 // appcenter-crashes
 import com.microsoft.appcenter.reactnative.crashes.AppCenterReactNativeCrashesPackage;
-// react-native-auto-updater
-import com.aerofs.reactnativeautoupdater.ReactNativeAutoUpdaterPackage;
+// react-native-code-push
+import com.microsoft.codepush.react.CodePush;
 // react-native-dynamic-bundle
 import org.mauritsd.reactnativedynamicbundle.RNDynamicBundlePackage;
 
@@ -59,7 +59,7 @@ public class PackageList {
       new AppCenterReactNativePackage(getApplication()),
       new AppCenterReactNativeAnalyticsPackage(getApplication(), getResources().getString(R.string.appCenterAnalytics_whenToEnableAnalytics)),
       new AppCenterReactNativeCrashesPackage(getApplication(), getResources().getString(R.string.appCenterCrashes_whenToSendCrashes)),
-      new ReactNativeAutoUpdaterPackage(),
+      new CodePush(getResources().getString(R.string.reactNativeCodePush_androidDeploymentKey), getApplicationContext(), BuildConfig.DEBUG),
       new RNDynamicBundlePackage()
     ));
   }
