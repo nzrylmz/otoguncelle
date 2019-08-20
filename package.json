@@ -1,0 +1,31 @@
+{
+  "name": "otoguncelle",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "test": "jest"
+  },
+  "dependencies": {
+    "appcenter": "^2.2.0",
+    "appcenter-analytics": "^2.2.0",
+    "appcenter-crashes": "^2.2.0",
+    "react": "16.8.6",
+    "react-native": "0.60.5",
+    "react-native-auto-updater": "^0.2.5",
+    "react-native-dynamic-bundle": "^0.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/runtime": "^7.5.0",
+    "@react-native-community/eslint-config": "^0.0.3",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "metro-react-native-babel-preset": "0.54.1",
+    "react-test-renderer": "16.8.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version": "0.0.2",
+  "minContainerVersion": "1.0",
+  "url": {
+    "url": "http://fiviscreen.com/guncelle/guncelle.bundle?raw=1",
+    "isRelative": true
+  }
+}
