@@ -1,6 +1,4 @@
 rootProject.name = 'otoguncelle'
-include ':react-native-auto-updater'
-project(':react-native-auto-updater').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-auto-updater/android')
 include ':react-native-dynamic-bundle'
 project(':react-native-dynamic-bundle').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-dynamic-bundle/android')
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
