@@ -32,8 +32,6 @@ import {
   reloadBundle
 } from 'react-native-dynamic-bundle';
 
-import ReactNativeAutoUpdater from 'react-native-auto-updater';
-
 const App = () => {
   return (
     <Fragment>
@@ -46,7 +44,6 @@ const App = () => {
           <Button title={"set active bundle"} onPress={() => setActiveBundle("bir")} />
           <Button title={"unregister bundle"} onPress={() => unregisterBundle("bir")} />
           <Button title={"reload bundle"} onPress={() => reloadBundle()} />
-          <Button title={"version"} onPress={() => console.warn(ReactNativeAutoUpdater.jsCodeVersion())} />
         </ScrollView>
       </SafeAreaView>
     </Fragment>

@@ -7,12 +7,10 @@ import com.facebook.react.PackageList;
 import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
 import com.facebook.react.bridge.JavaScriptExecutorFactory;
 import com.facebook.react.ReactApplication;
-import com.aerofs.reactnativeautoupdater.ReactNativeAutoUpdaterPackage;
 import org.mauritsd.reactnativedynamicbundle.RNDynamicBundlePackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
-import javax.annotation.Nullable;
 
 import java.util.List;
 
@@ -25,11 +23,6 @@ public class MainApplication extends Application implements ReactApplication {
       return BuildConfig.DEBUG;
     }
 
-    @Nullable
-    @Override
-    protected String getBundleAssetName() {
-        return "main.android.bundle";
-    }
 
     @Override
     protected List<ReactPackage> getPackages() {
